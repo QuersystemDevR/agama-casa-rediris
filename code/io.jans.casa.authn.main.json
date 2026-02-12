@@ -335,7 +335,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "Wrong user name or password",
+							"assignmentExpression": "\"Wrong user name or password\"",
 							"assignedVariableName": "obj.message"
 						},
 						{
@@ -357,7 +357,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-23f997d4-a696-4006-bc4e-ad46e06867d3",
@@ -2077,8 +2077,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1784.5063440703602,
-		"y": 429.715454414349,
-		"zoom": 0.8032939967570337
+		"x": -792.7670519550957,
+		"y": 320.978210589131,
+		"zoom": 0.5
 	}
 }
