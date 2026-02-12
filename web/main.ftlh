@@ -4,9 +4,11 @@
     <#assign assets=cache.casa_assets grabLocation=(captureLocation!false)>
 
     <section class="pa4 shadow-4 bg-blank gray cust-section">
-        <h2 class="f3 dark-blue2">Autenticación IRISMail</h2>
-        <p>Acceso protegido mediante autenticación de doble factor</p>
-        
+        <h2 class="f3 dark-blue2 tc fw7 ma0">Autenticación IRISMail</h2>
+        <p class="tc mt2 mb0 i gray">
+        Acceso protegido mediante autenticación de doble factor
+        </p>
+
         <#if message??>
             <p class="w5 dark-red tc pv2 ph0 ma0 f6">Autenticación Fallida</p>
         </#if>
@@ -20,10 +22,11 @@
                 <input name="password" type="password" class="focused-text w-100 pb1 dark-gray" required>
                 <label class="focused-label-big">Contraseña</label>
             </div>
-            <div class="mt5">
+            <div class="mt5 flex justify-center">
                 <input type="submit" value="Iniciar sesión"
                     class="f7-cust bw0 br1 ph4 pv2 bg-bsgreen-success white hover-bsgreen-success hover-white btn cust-primary-button">
             </div>
+
 
             <input name="device" type="hidden">
             <#if grabLocation>
