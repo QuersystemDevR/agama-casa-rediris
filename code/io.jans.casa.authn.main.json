@@ -357,7 +357,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-23f997d4-a696-4006-bc4e-ad46e06867d3",
@@ -999,11 +999,11 @@
 						{
 							"variableTypeCheck": false,
 							"assignmentExpression": "null",
-							"assignedVariableName": "E"
+							"assignedVariableName": "error"
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "We had trouble authenticating you",
+							"assignmentExpression": "\"We had trouble authenticating you\"",
 							"assignedVariableName": "message"
 						}
 					],
@@ -1020,7 +1020,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
