@@ -27,14 +27,14 @@ When prompt2fa is false
      Call reinutil updateTrustedDevices 
      Finish uid
 userData = { uid: uid, inum: reinutil.inum, name: reinutil.name }
-method = methods[0]
+method = Call io.jans.casa.authn.MethodHelper#first methods
 Repeat 3 times max
      Log "@info Launching flow" method
      // //Launch the flow of first authn method
      obj | E = Trigger $method userData true
      When E is not null
           Log "@error Authentication flow % for user % crashed: %" method userData.inum E
-          E = null
+          error = null
           message = "We had trouble authenticating you"
      Otherwise
           When obj.success is true
